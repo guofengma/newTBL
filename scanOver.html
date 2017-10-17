@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>下载页面</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/scanOver.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;">
+        <!--头部-->
+        <header class="downloadPage">
+            <img src="./imgs/scanOver.png" alt="">
+            <a href="javascript:;" id="goDownload" onclick="dwonloadApp()">点击下载</a>
+        </header>
+        <!--主体-->
+        <main>
+
+        </main>
+        <!--底部-->
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+<script>
+    function dwonloadApp() {
+        var u = navigator.userAgent;
+
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1 || u.indexOf('iPhone') > -1) {
+
+            window.location.href = 'http://a.app.qq.com/o/simple.jsp?pkgname=com.example.yimu.tdfdoc';
+        } else if (u.indexOf('SymbianOS') > -1 || u.indexOf('Windows Phone') > -1
+            || u.indexOf('iPad') > -1 || u.indexOf('iPod') > -1) {
+            //其他设备
+            alert("暂不支持该设备!");
+        } else {
+            //PC端
+            window.location.href = 'http://www.pgyer.com/cB8d2';
+        }
+    }
+
+</script>
+
+</html>

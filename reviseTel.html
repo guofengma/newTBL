@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>修改手机号</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/reviseTel.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/reviseTel.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#fff;">
+        <!--头部-->
+        <header class="tel_top">
+            <p>您当前的手机号为</p>
+            <!--获取当前用户的手机号-->
+            <p id="telNum"></p>
+        </header>
+        <!--主体-->
+        <main class="say_body">
+            <p>说明:</p>
+            <p>更换后当前已邀请的医生、已完成的订单等信息不变，修改后必须用新手机号码登录；</p>
+            <p>原账户未激活的医生不会跟随手机号变更而变更，请将未激活医生全部激活后再将手机号变更；</p>
+            <p>仅支持修改到未注册的手机号，如果手机号已注册，请退出当前账号，并登录到要修改的手机号进行登录。</p>
+        </main>
+        <!--底部-->
+        <footer class="re_sure">
+            <a href="javascript:;" id="reviseTel">
+                修改手机号
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

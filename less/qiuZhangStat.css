@@ -1,0 +1,83 @@
+@charset 'utf-8';
+html,
+body {
+  height: 100%;
+  background-color: #eaeaea;
+}
+.top {
+  padding: 0 .6rem;
+}
+.top ul {
+  width: 50%;
+  float: left;
+}
+.top ul li {
+  margin-top: .6rem;
+  font-size: .75rem;
+  color: #393939;
+}
+.top ul li:first-of-type {
+  line-height: 2rem;
+  margin-top: 0;
+  color: #036db8;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: .8rem;
+}
+.top ul li:last-of-type {
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.top .top_left {
+  text-align: left;
+}
+.top .top_right {
+  text-align: right;
+}
+.con {
+  padding: 0 .6rem;
+}
+.con p {
+  line-height: 2.4rem;
+  color: #036db8;
+}
+.con ul {
+  background-color: #fff;
+  border-radius: .3rem;
+}
+.con ul li {
+  border-bottom: 1px solid #e5e5e5;
+}
+.con ul li:first-of-type div:first-of-type p {
+  color: #fa7e24;
+}
+.con ul li div:first-of-type {
+  float: left;
+  padding: .6rem .8rem 0 .6rem;
+}
+.con ul li div:first-of-type img {
+  display: block;
+  height: 2.25rem;
+  border-radius: 50%;
+}
+.con ul li div:first-of-type p {
+  font-size: .8rem;
+  color: #036db8;
+  text-align: center;
+}
+.con ul li div:last-of-type {
+  overflow: hidden;
+}
+.con ul li div:last-of-type ul {
+  padding: 0 .6rem .7rem 0;
+}
+.con ul li div:last-of-type ul li {
+  margin-top: .5rem;
+  border: 0 none;
+  float: left;
+  width: 50%;
+  font-size: .75rem;
+  color: #393939;
+}
+.con ul li div:last-of-type ul li:nth-of-type(2n) {
+  text-align: right;
+}

@@ -1,0 +1,207 @@
+@charset 'utf-8';
+//重置日历样式
+.ic__header {
+    background-color: transparent !important;
+    select {
+        border:none;
+        width: 100px;
+    }
+}
+.ic__prev, .ic__next {
+    background-color: transparent !important;
+    i {
+       color: #999;
+       font-size: 1rem !important; 
+       line-height: 35px;
+    }
+}
+.ic__month {
+    width: 15%;
+    overflow: hidden;
+    left: 50%;
+}
+.ic__year {
+    width: 16%;
+    overflow: hidden;
+    left: 35%;
+}
+.ic__week-head td {
+    border:none;
+}
+.ic__days {
+    border-radius: 50%; 
+}
+.ic__days td {
+    border:none;
+    position: relative;
+    b {
+        position: absolute;
+        right: .3rem;
+        top: .2rem;
+        height: .35rem;
+        width: .35rem;
+        border-radius: 50%;
+        background-color: #e2200e;
+    }
+}
+.ic__days .ic__day_state_current {
+    background-color: #036eb8;
+    color: #fff;
+    opacity: .5;
+    
+}
+.ic__days .ic__day_state_selected {
+    background-color: #036eb8;
+    color: #fff;
+    
+}
+
+
+
+.open_service {
+    margin-top: .5rem;
+    background-color: #fff;
+    .service_say {
+        line-height: 2rem;
+        font-size: .7rem;
+        color: #393939;
+        padding-left: .6rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .service_box {
+        li {
+            padding-left: .6rem;
+            border-bottom: 1px solid #ccc;
+            img {
+                float: left;
+                width: 2.25rem;
+                margin: .5rem 1rem .5rem 0;
+            }
+            p:nth-of-type(1) {
+                margin-top: .6rem;
+                font-size: .75rem;
+                color: #393939;
+                span {
+                    float: right;
+                    padding-right: .6rem;
+                    color: #036eb8;
+                }
+            }
+            p:nth-of-type(2) {
+                font-size: .65rem;
+                margin-top: .4rem;
+                color: #666;
+            }
+        }
+    }
+}
+
+.detail_list {
+    margin-top: .5rem;
+    background-color: #fff;
+    .detail_say {
+        line-height: 2rem;
+        font-size: .7rem;
+        color: #393939;
+        padding-left: .6rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .detail_box {
+        li {
+            padding-left: .6rem;
+            border-bottom: 1px solid #ccc;
+            p:nth-of-type(1) {
+                margin-top: .6rem;
+                font-size: .75rem;
+                color: #393939;
+                span {
+                    color: #999;
+                    font-size: .7rem;
+                    float:right;
+                    padding-right:.6rem;
+                }
+            }
+            p:nth-of-type(2) {
+                margin-top: .3rem;
+                margin-bottom: .3rem;
+            }
+            .finish {
+                color: #036eb8
+            }
+            .unfinish {
+                color: #e02112;
+            }
+        }
+    }
+}
+
+//底部弹出的时间段
+.time_box {
+    p {
+        font-size: .75rem;
+        color: #393939;
+        margin: .5rem 0;
+    }
+    .box_head {
+        width: 100%;
+        li {
+            float: left;
+            margin-right: 3%;
+            height: 1.5rem;
+            text-align: center;
+            border: 1px solid #036eb8;
+            color: #036eb8;
+            border-radius: .3rem;
+            line-height: 1.5rem;
+            width: 28.5%;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+    .box_main {
+        min-height: 7rem;
+        li {
+            ul {
+                li {
+                    float: left;
+                    margin-right: 3%;
+                    height: 1.5rem;
+                    text-align: center;
+                    border: 1px solid #036eb8;
+                    color: #036eb8;
+                    border-radius: .3rem;
+                    line-height: 1.5rem;
+                    width: 28.5%;
+                    margin-bottom: .5rem; 
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+//点击样式
+.active {
+    background-color: #036eb8 !important;
+    color: #fff !important;
+}
+
+
+.noOpen {
+    color:#e02112 !important;
+}
+
+.hadDate {
+    background-color: #e02112 !important;
+    color: #fff !important;
+    opacity: .3 !important;
+}
+.ic__days .ic__day_state_current {
+    background-color: #036eb8 !important;
+}
+.ic__days .ic__day_state_selected {
+    background-color: #036eb8 !important;
+    opacity: 1 !important;
+}

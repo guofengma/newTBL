@@ -1,0 +1,80 @@
+@charset 'utf-8';
+html,
+body,
+.container {
+  height: 100%;
+  width: 100%;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: .8rem;
+  color: #ccc;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: .8rem;
+  color: #ccc;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: .8rem;
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: .8rem;
+  color: #ccc;
+}
+.bank_box {
+  padding-top: .5rem;
+}
+.bank_box form input {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  height: 2.5rem;
+  padding-left: .5rem;
+  margin-top: .5rem;
+  border-radius: .3rem;
+  font-size: .8rem;
+  color: #393939;
+}
+.bank_box form .choose_bank {
+  position: relative;
+}
+.bank_box form .choose_bank img {
+  position: absolute;
+  right: 8%;
+  top: .8rem;
+  width: .5rem;
+}
+.bank_box form .bind_say {
+  padding-left: 10%;
+  margin-top: 1rem;
+  color: #999;
+  font-size: .6rem;
+  position: relative;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.bank_box form .bind_say img {
+  position: absolute;
+  left: 5%;
+  top: .1rem;
+  width: .6rem;
+}
+.bank_box form #sure_bind {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  background-color: #036eb8;
+  border-radius: .3rem;
+  text-align: center;
+  color: #fff;
+  font-size: .8rem;
+  margin-top: 2.2rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>涛币统计</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/monCount.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/monCount.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;">
+        <!--头部-->
+        <header class="mon_head">
+            
+        </header>
+        <!--主体-->
+        <main class="mon_box">
+            <div class="mon_one clearfix">
+                <p>请输入提现涛币</p>
+                <p>
+                    T <input type="tel" id="monNum">
+                    <a href="javascript:;" id="getMoney">提现</a>
+                </p>
+            </div>
+            <div class="mon_two clearfix">
+                <p>历史累计总涛币</p>
+                <p>
+                    T <span class="all_money"></span>
+                    <a href="./monDetail.html">明细</a>
+                </p>
+            </div>
+            <div class="mon_three clearfix">
+                <p>历史累计提现涛币</p>
+                <p>
+                    T <span class="had_money"></span>
+                    <a href="./monLog.html">明细</a>
+                </p>
+            </div>
+        </main>
+        <!--底部-->
+        <footer class="mon_foot">
+            <p><span>注：</span>
+                提现涛币必须达到5000涛币以上才可以申请提现，且每月只能提现一次。
+            </p>
+        </footer>
+    </div>
+</body>
+</html>

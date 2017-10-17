@@ -1,0 +1,67 @@
+@charset 'utf-8';
+html,body, .container {
+    height: 100%;
+    width: 100%;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  font-size: .8rem;
+  color: #ccc;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: .8rem;
+  color: #ccc;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: .8rem;
+  color: #ccc;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  font-size: .8rem;
+  color: #ccc;
+}
+.card_box {
+    padding-top: .8rem;
+    input {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        padding-left: .8rem;
+        border-radius: .3rem;
+        height: 2.5rem;
+        font-size: .8rem;
+        color: #393939;
+    }
+    p {
+        padding-left: 10%;
+        margin-top: 1rem;
+        color: #999;
+        font-size: .6rem;
+        position: relative;
+        white-space:nowrap;
+        text-overflow:ellipsis;
+        -o-text-overflow:ellipsis; 
+        overflow: hidden;
+        img {
+            position: absolute;
+            left: 5%;
+            top:.1rem;
+            width: .6rem;
+        }
+    }
+    #sureBind {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #036eb8;
+        border-radius: .3rem;
+        color: #fff;
+        text-align: center;
+        line-height: 2.5rem;
+        font-size: .8rem;
+        margin-top: 2.2rem;
+    }
+}

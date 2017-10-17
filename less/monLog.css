@@ -1,0 +1,99 @@
+@charset 'utf-8';
+html,
+body {
+  height: 100%;
+  background-color: #eaeaea;
+  width: 100%;
+}
+.container {
+  padding: .6rem .6rem 0 .6rem;
+}
+.dateChoose {
+  background-color: #fff;
+  width: 100%;
+  padding-bottom: .8rem;
+  border-radius: .3rem;
+}
+.dateChoose .date_go {
+  display: inline-block;
+  width: 49%;
+  text-align: center;
+}
+.dateChoose .date_go p {
+  margin-top: .5rem;
+  font-size: .8rem;
+  color: #3a3a3a;
+}
+.dateChoose .date_go p:nth-of-type(2) {
+  color: #686868;
+  font-size: .6rem;
+}
+.dateChoose #queryBtn {
+  display: block;
+  text-align: center;
+  width: 94%;
+  line-height: 2.5rem;
+  margin: 0 auto;
+  background-color: #036eb8;
+  color: #fff;
+  font-size: .8rem;
+  border-radius: .4rem;
+  margin-top: 1.5rem;
+}
+.gearDate {
+  font-family: '微软雅黑' !important;
+}
+.gearDate .date_ctrl {
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  width: 90% !important;
+  height: 9.5rem;
+  margin: auto !important;
+  border-radius: .3rem;
+  background-color: #fff;
+  color: #393939;
+}
+.gearDate .date_ctrl .date_btn_box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff;
+}
+.gearDate .date_ctrl .date_btn_box .date_btn {
+  width: 50%;
+  color: #036eb8;
+  line-height: 1.3rem;
+}
+.gearDate .date_ctrl .date_btn_box .lcalendar_cancel {
+  color: #666 !important;
+  border-right: 1px solid #e5e5e5;
+}
+.gearDate .date_ctrl .date_roll_mask .date_roll {
+  background-color: #fff;
+  font-weight: 400;
+}
+.money_list {
+  margin-top: 1rem;
+}
+.money_list ul {
+  background-color: #fff;
+}
+.money_list ul li p {
+  line-height: 2.25rem;
+  font-size: .75rem;
+  color: #666;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 .6rem;
+}
+.money_list ul li p span {
+  color: #999;
+  font-size: .6rem;
+}
+.money_list ul li p i {
+  font-size: .9rem;
+  float: right;
+  color: #036eb8;
+}

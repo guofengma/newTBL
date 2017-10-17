@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绑定银行卡</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/bindBankCard.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/bindBankCard.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;">
+        <!--头部-->
+        <header class="bank_box">
+            <form>
+                <!--该名字应该从后台获取-->
+                <input type="text" value="" readonly id="bankUser">
+                <p class="choose_bank">
+                    <input type="text" placeholder="请选择银行卡" readonly id="bankText">
+                    <img src="./imgs/binding_next.png" alt="">
+                </p>
+                <input type="tel" placeholder="请输入银行卡号" id="bankNum">
+                <input type="text" placeholder="请输入开户行信息" id="bankInfo">
+                <p class="bind_say"><img src="./imgs/information_prompt.png" alt="">银行卡必须为本人名下的银行卡，否则无法提现</p>
+                <a href="javascript:;" id="sure_bind">确认绑定</a>
+            </form>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@charset 'utf-8';
+html,body {
+    height: 100%;
+    background-color: #eaeaea;
+}
+.top {
+    padding: 0 .6rem;
+    ul {
+        width: 50%;
+        float: left;
+        li {
+            margin-top: .6rem;
+            font-size: .75rem;
+            color: #393939;
+            &:first-of-type {
+                line-height: 2rem;
+                margin-top: 0;
+                color: #036db8;
+                border-bottom: 1px solid #e5e5e5; 
+                font-size: .8rem;
+            }
+            &:last-of-type {
+                padding-bottom: .6rem;
+                border-bottom: 1px solid #e5e5e5; 
+            }
+        }
+    }
+    .top_left {
+        text-align: left;
+    }
+    .top_right {
+        text-align: right;
+    }
+}
+.con {
+    padding: 0 .6rem;
+    p {
+        line-height: 2.4rem;
+        color: #036db8;
+    }
+    ul {
+        background-color: #fff;
+        border-radius: .3rem;
+        li {
+            border-bottom: 1px solid #e5e5e5;
+            &:first-of-type {
+                div:first-of-type {
+                    p {
+                        color: #fa7e24;
+                    }
+                }
+            } 
+            div:first-of-type {
+                float: left;
+                padding: .6rem .8rem 0 .6rem;
+                img {
+                    display: block;
+                    height: 2.25rem;
+                    border-radius: 50%; 
+                }
+                p {
+                    font-size: .8rem;
+                    color: #036db8;
+                    text-align: center;
+                }
+            }
+            div:last-of-type {
+                overflow: hidden;
+                ul {
+                    padding: 0 .6rem .7rem 0;
+                    li {
+                        margin-top: .5rem;
+                        border: 0 none;
+                        float: left;
+                        width: 50%;
+                        font-size: .75rem;
+                        color: #393939;
+                        &:nth-of-type(2n) {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医生列表</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/phone_dropload.css">
+    <link rel="stylesheet" href="./less/queryList.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/datePicker.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/phone_dropload.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/queryList.js"></script>
+</head>
+
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;padding-bottom:2rem;">
+        <!--头部-->
+        <header class="doc_main">
+            
+        </header>
+        <!--主体-->
+        <main class="doc_list">
+            <div class="list_title">
+                <div class="btn_box">
+                    <div class="btn_small_box clearfix">
+                        <a href="javascript:;" class="active" id="hadMoney">医生</a>
+                        <a href="javascript:;" id="noMoney">潜在医生</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="./addDocCode.html" id="addDoc">添加医生</a> -->
+            <div class="passed" id="hadListDoc">
+                <ul class="passed_list_show">
+
+                </ul>
+            </div>
+            <div class="no_pass" id="noListDoc">
+                <ul class="list_show">
+                    
+                </ul>
+            </div>
+        </main>
+        <!--底部-->
+        <footer>
+
+        </footer>
+    </div>
+    <script type="text/html" id="allData">
+        {{each list}}
+        <h3>共发展医生：{{$value.allDoctor}}名</h3>
+        <ul class="clearfix all_data">
+            <li>
+                注册医生：{{$value.registerDoctor}}名
+            </li>
+            <li>
+                认证医生：{{$value.authenDoctor}}名
+            </li>
+            <li>
+                等待审核：{{$value.pendingReview}}名
+            </li>
+            <li>
+                未认证：{{$value.notAuthenDoctor}}名
+            </li>
+        </ul>
+        {{/each}}
+    </script>
+    <script type="text/html" id="passedDocList">
+        {{each enableDoctor}}
+        <li docid="{{$value.userDoctor.id}}">
+            <div class="top_list">
+                <img src="{{$value.userDoctor.header == '' ? './imgs/icon.jpg' : $value.userDoctor.header}}" alt="">
+                <p><i style="{{$value.newDoctor==1?'display:inline-block;':'display:none'}}">{{$value.newDoctor == 1 ? '最新' : ''}}</i>{{$value.userDoctor.name}}<span class="five">{{$value.doctorShenFeng}}</span></p>
+                <p>{{$value.userDoctor.hospitalName}}<span>{{$value.userDoctor.department}}</span></p>
+            </div>
+            <div class="bottom_list">
+                <span>{{$value.shenghestatus}}</span>
+                <p>患者：{{$value.customerCount}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务：{{$value.ordersize}} <sup>{{$value.newOrderSize==0?'':'新+'+$value.newOrderSize}}</sup></p>
+                <p>上次登录时间：{{$value.loginTime}}</p>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="noPassList">
+        {{each notEnableDoctor}}
+        <li>
+            <img src="{{$value.header==''?'./imgs/icon.jpg':$value.header}}" alt="">
+            <p id="telA">{{$value.name}}<span style="float:right;color:#036db8;">{{$value.renzhengimg}}</span></p>
+            <p>未完善资料，注册成功后90天内未完善注册将自动释放</p>
+        </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

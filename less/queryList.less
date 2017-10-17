@@ -1,0 +1,212 @@
+@charset 'utf-8';
+body {
+    background-color: #eaeaea;
+}
+.container {
+    padding: .6rem .6rem 0 .6rem;
+}
+.doc_main {
+    h3 {
+        line-height: 1.4rem;
+        color: #036db8;
+        border-bottom: 1px solid #e5e5e5;
+        font-weight: 400;
+    }
+    ul {
+        li {
+            float: left;
+            width: 50%;
+            line-height: 1.2rem;
+            font-size: .75rem;
+            &:nth-of-type(2n) {
+                text-align: right;
+            }
+        }
+    }
+}
+.doc_list {
+    margin-top: .5rem;
+    position: relative;
+    .list_title {
+        width: 100%;
+        border: 1px solid #036be8;
+        border-radius: .3rem;
+        .btn_small_box {
+            line-height: 2rem;
+            // width: 100%;
+            overflow: hidden;
+            a {
+                width: 50%;
+                text-align: center;
+                float: left;
+                color: #036be8;
+            }
+            .active {
+                color: #fff;
+                background-color: #036eb8;
+            }
+        }
+    }
+    #addDoc {
+        display: block;
+        width: 80%;
+        opacity: 0;
+        background-color: #036eb8;
+        text-align: center;
+        border-radius: .3rem;
+        color: #fff;
+        font-size: .8rem;
+        margin: 0 auto;
+        height: 0;
+        line-height: 2rem;
+        position: relative;
+        z-index: 99;
+    }
+    .passed {
+        .passed_list_show {
+            margin-top: .5rem;
+            background-color: #fff;
+            border-radius: .3rem; 
+            padding: 0 .5rem 0 .5rem;
+            li {
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: .5rem;
+                padding-top: .5rem;
+                .top_list {
+                    img {
+                        width: 2.25rem;
+                        height: 2.25rem;
+                        border-radius: 50%;
+                        float: left;
+                        margin-right: .5rem;
+                    }
+                    p {
+                        overflow: hidden;
+                        &:nth-of-type(1) {
+                            font-size: .75rem;
+                            color: #393939;
+                            i {
+                                display: inline-block;
+                                color: #fff;
+                                background-color: #f97f24;
+                                font-size: .65rem;
+                                padding:0 .1rem;
+                                border-radius: .15rem;
+                                margin-right: .2rem;
+                            }
+                            span {
+                                float: right;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            margin-top: .4rem;
+                            color: #666;
+                            font-size: .7rem;
+                            span {
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                .bottom_list {
+                    margin-top: .5rem;
+                    span {
+                        float: left;
+                        width: 2.25rem;
+                        text-align: center;
+                        color: #036db8;
+                        margin-right: .5rem;
+                        padding: 0 .4rem;
+                        height: 2.25rem;
+                    }
+                    p {
+                        font-size: .75rem;
+                        color: #666;
+                        sup {
+                            color: #e02111;
+                            font-size: .6rem;
+                        }
+                        &:nth-of-type(2) {
+                            margin-top: .1rem;
+                            font-size: .65rem;
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .no_pass {
+        .list_show {
+            margin-top: .5rem;
+            background-color: #fff;
+            border-radius: .3rem; 
+            padding: 0 .5rem 0 .5rem;
+            li {
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: .5rem;
+                padding-top: .5rem;
+                img {
+                    width: 2.25rem;
+                    height: 2.25rem;
+                    border-radius: 50%;
+                    float: left;
+                    margin-right: .5rem;
+                }
+                p {
+                    font-size: .75rem;
+                    color: #393939;
+                    &:nth-of-type(2) {
+                        font-size: .6rem;
+                        color: #999;
+                        margin-top: .4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//第三方日期选择器控件样式
+.gearDate {
+    font-family: '微软雅黑' !important;
+    .date_ctrl {
+        left: 0 !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        width: 90% !important;
+        height: 9.5rem;
+        margin: auto !important;
+        border-radius: .3rem;
+        background-color: #fff;
+        color:#393939;
+        .date_btn_box {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: #fff;
+            .date_btn {
+                width: 50%;
+                color: #036eb8;
+                line-height: 1.3rem;
+            }
+            .lcalendar_cancel {
+                color: #666 !important;
+                border-right: 1px solid #e5e5e5;
+            }
+        }
+        .date_roll_mask {
+            .date_roll {
+                background-color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+}
+.five {
+    color: #036db8 !important;
+}
+.no_five {
+    color:#e02112 !important;
+}

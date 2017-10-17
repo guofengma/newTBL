@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>医生</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/docSelfInfo.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/docSelfInfo.js"></script>
+</head>
+
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;padding-top:.1rem;">
+
+        <!--主体-->
+        <main class="doc_box">
+            <div class="doc_one">
+
+            </div>
+            <div class="doc_two">
+
+            </div>
+            <div class="doc_three">
+                <p>医生服务</p>
+                <ul class="doc_open_three">
+
+                </ul>
+            </div>
+        </main>
+        <!--底部-->
+        <footer>
+
+        </footer>
+    </div>
+    <script type="text/html" id="docStatus">
+        {{each list}}
+        <p>医生状态</p>
+        <ul>
+            <li>
+                <p>注册医生</p>
+                <p>临时互联网医院医事服务权</p>
+            </li>
+            <li class="register_doc">
+                 <p>认证医生<i class="upload_line" style="display:{{$value.fourCard == 1 ? 'none' : 'inline-block'}}">（未获得）</i><span id="noNum" class="{{$value.fourCard == 1 ? 'registed' : 'upload_line'}}">{{$value.fourCard == 1 ? '已上传' : '未上传'}}</span></p> 
+                <p>长期互联网医院医事服务权</p>
+            </li>
+        </ul>
+        {{/each}}
+    </script>
+
+    <script type="text/html" id="docService">
+        {{each list}}
+            <li class="clearfix">
+            <p>健康咨询<span class="{{$value.getvisopenphonetime == 0 ? 'upload_line' : 'registed'}}">{{$value.getvisopenphonetime == 0 ? '未开启' : '已开启'}}</span></p>
+            {{if $value.getvisopenphonetime!=0}} 
+            <p>{{$value.getvisopenphonetime}}个时段&nbsp;&nbsp;{{$value.getvisopenphonetimeCount}}个小时<a href="./docOpenInfo.html" id="showDetail">查看详情</a></p>
+            {{/if}}
+            {{if $value.getvisopenphonetime==0}}
+            <p>尚未开放时间，请协助邀请医生开放服务时间</p>
+            {{/if}}
+            </li>
+            <li class="clearfix">
+            <p>准时预约<span class="{{$value.getvisitmeCount == 0 ? 'upload_line' : 'registed'}}">{{$value.getvisitmeCount == 0 ? '未开启' : '已开启'}}</span></p>
+            {{if $value.getvisitmeCount!=0}} 
+            <p>{{$value.getvisitmeCount}}个时段&nbsp;&nbsp;{{$value.getvisitmeDetailCount}}个小时</p>
+            {{/if}}
+            {{if $value.getvisitmeCount==0}}
+            <p>尚未开放时间，请协助邀请医生开放服务时间</p>
+            {{/if}}
+            </li>
+            <li class="clearfix">
+            <p>预约诊疗<span class="{{$value.tzztransferstat == 0 ? 'upload_line' : 'registed'}}">{{$value.tzztransferstat == 0 ? '未开启' : '已开启'}}</span></p>
+            {{if $value.tzztransferstat!=0}} 
+            <p> </p>
+            {{/if}}
+            {{if $value.tzztransferstat==0}}
+            <p>尚未开启服务，请协助邀请医生开放服务</p>
+            {{/if}}
+            </li>
+        {{/each}}
+    </script>
+    <script type="text/html" id="becaFor">
+        {{each list}}
+        {{if $value != null}}
+        <div class="becase">
+            <span class="upload_line" style="{{$value.getZhiye == 0 ? 'display:none' : 'display:block;'}}">执业证：{{$value.getZhiye}}</span>
+            <span class="upload_line" style="display:{{$value.getJobcard == 0 ? 'none' : 'block'}}">工作证：{{$value.getJobcard}}</span>
+            <span class="upload_line" style="display:{{$value.getZhicheng == 0 ? 'none' : 'block'}}">职称证：{{$value.getZhicheng}}</span>
+            <span class="upload_line" style="display:{{$value.getZige == 0 ? 'none' : 'block'}}">资格证：{{$value.getZige}}</span>
+            <span class="upload_line" style="display:{{$value.getShenfen == 0 ? 'none' : 'block'}}">身份证正面：{{$value.getShenfen}}</span>
+            <span class="upload_line" style="padding-bottom:.5rem;display:{{$value.getShenfenFm == 0 ? 'none' : 'block'}}">身份证反面：{{$value.getShenfenFm}}</span> 
+        </div>
+        {{/if}}
+        {{/each}}
+    </script>         
+</body>
+
+</html>

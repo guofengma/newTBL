@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>认证信息</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/zbtBaseInfo.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/zbtBaseInfo.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;padding-top: 2.5rem;">
+        <!--头部-->
+        <header class="img_box">
+            <img src="./imgs/identification_logo.png" alt="">
+        </header>
+        <!--主体-->
+        <main class="choose_area">
+            <form>
+                <input id="workPlace" type="text" value="事业部" readonly>
+                <input id="bigArea" type="text" value="大区" readonly>
+                <input id="placeHole" type="text" value="地办" readonly>
+            </form>
+            <p class="info_self">
+                <img src="./imgs/information_prompt.png" alt="">
+                请务必填写自己真实信息，一旦认证不可修改。
+            </p>
+            <a href="javascript:;" id="submitBtn">提交认证</a>
+        </main>
+        <!--底部-->
+        <footer>
+            
+        </footer>
+    </div>
+    <!--事业部模板-->
+    <script type="text/html" id="bussizeList">
+        <ul class="bussize_box">
+        {{each list value index}}
+            <li buscode="{{value.areaNumber}}">
+                {{value.areaName}}
+            </li>
+        {{/each}}
+        </ul>
+    </script>
+    <!--大区模板-->
+    <script type="text/html" id="bigAreaList">
+        <ul class="bigArea_box">
+        {{each list value index}}
+            <li areacode="{{value.areaNumber}}">
+                {{value.areaName}}
+            </li>
+        {{/each}}
+        </ul>
+    </script>
+    <!--地办模板-->
+    <script type="text/html" id="dibanList">
+        <ul class="diban_box">
+        {{each list value index}}
+            <li dicode="{{value.areaNumber}}">
+                {{value.areaName}}
+            </li>
+        {{/each}}
+        </ul>
+    </script>
+</body>
+</html>

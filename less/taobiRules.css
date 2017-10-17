@@ -1,0 +1,33 @@
+@charset 'utf-8';
+html,
+body,
+.container {
+  height: 100%;
+  width: 100%;
+}
+.img_top img {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+.rules_main {
+  padding-left: .6rem;
+  padding-right: .6rem;
+}
+.rules_main h3 {
+  margin-top: .8rem;
+  font-size: .8rem;
+  color: #393939;
+}
+.rules_main p {
+  color: #666;
+  font-size: .7rem;
+  margin-top: .4rem;
+}
+.foot_say p {
+  text-align: center;
+  color: #ccc;
+  font-size: .6rem;
+  padding-top: 5rem;
+  background-color: #eaeaea;
+}

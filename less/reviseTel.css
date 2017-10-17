@@ -1,0 +1,91 @@
+@charset 'utf-8';
+.tel_top {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.tel_top p:nth-of-type(1) {
+  font-size: .8rem;
+  color: #393939;
+  text-align: center;
+}
+.tel_top p:nth-of-type(2) {
+  font-size: 1rem;
+  color: #036eb8;
+  text-align: center;
+}
+.say_body {
+  padding: 0 4%;
+  color: #999;
+  font-size: .7rem;
+}
+.say_body p:nth-of-type(n+2) {
+  margin-top: .8rem;
+}
+.re_sure {
+  margin-top: 6rem;
+  padding: 0 4%;
+}
+.re_sure #reviseTel {
+  display: block;
+  border-radius: .4rem;
+  background-color: #036fb8;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #fff;
+  font-size: .8rem;
+}
+.change_layer {
+  padding: 50px 30px !important;
+}
+.layui-m-layer0 .layui-m-layerchild {
+  width: 85% !important;
+  height: 9rem;
+}
+.layui-m-layercont {
+  padding: 0 !important;
+}
+.layui-m-layercont p {
+  line-height: 1.5rem;
+  color: #393939;
+  font-size: .7rem;
+}
+.layui-m-layercont .sendTel span {
+  font-size: .9rem;
+}
+.layui-m-layercont form {
+  margin-top: .8rem;
+}
+.layui-m-layercont form .codeNum {
+  height: 2.1rem;
+  width: 2.1rem;
+  text-align: center;
+  font-size: .9rem;
+  color: #393939;
+  border: 1px solid #999;
+  border-radius: .3rem;
+}
+.layui-m-layercont form .codeNum:nth-of-type(n+2) {
+  margin-left: 1.3rem;
+}
+.layui-m-layercont .getNewTel {
+  margin-top: .8rem;
+}
+.layui-m-layercont .getNewTel input {
+  width: 13rem;
+  height: 2.1rem;
+  font-size: .9rem;
+  text-align: center;
+  color: #393939;
+  border: 1px solid #999;
+  border-radius: .3rem;
+}
+.layui-m-layerbtn {
+  border-top: 0 none !important;
+  margin-top: 1rem;
+  background-color: #fff !important;
+}
+.layui-m-layerbtn span {
+  border-top: 1px solid #e5e5e5;
+  font-size: .8rem !important;
+  color: #036eb8 !important;
+}

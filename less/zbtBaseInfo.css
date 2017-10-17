@@ -1,0 +1,69 @@
+@charset 'utf-8';
+html,
+body,
+.container {
+  height: 100%;
+  width: 100%;
+}
+.img_box img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2.25rem;
+}
+.choose_area form input {
+  display: block;
+  width: 90%;
+  padding-left: .6rem;
+  font-size: .75rem;
+  color: #393939;
+  margin: 0 auto;
+  margin-bottom: .4rem;
+  height: 2.5rem;
+  border-radius: .3rem;
+}
+.choose_area p {
+  font-size: .6rem;
+  color: #999;
+  margin-top: 1.2rem;
+  padding-left: 5%;
+  margin-bottom: 2.2rem;
+}
+.choose_area p img {
+  width: .6rem;
+  float: left;
+  margin-top: .1rem;
+  margin-right: .5rem;
+}
+.choose_area a {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: .3rem;
+  background-color: #036eba;
+  color: #fff;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: .75rem;
+}
+.layui-m-layer1 .layui-m-layerchild {
+  width: 85%;
+  height: 22rem;
+  border-radius: .3rem !important;
+}
+.layui-m-layer1 .layui-m-layerchild .layui-m-layercont .bussize_box,
+.layui-m-layer1 .layui-m-layerchild .layui-m-layercont .bigArea_box,
+.layui-m-layer1 .layui-m-layerchild .layui-m-layercont .diban_box {
+  overflow: auto;
+  height: 19rem;
+  padding: 0 .5rem;
+}
+.layui-m-layer1 .layui-m-layerchild .layui-m-layercont .bussize_box li,
+.layui-m-layer1 .layui-m-layerchild .layui-m-layercont .bigArea_box li,
+.layui-m-layer1 .layui-m-layerchild .layui-m-layercont .diban_box li {
+  line-height: 2rem;
+  border-bottom: 1px solid #ccc;
+  font-size: .7rem;
+  color: #393939;
+}

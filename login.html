@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/login.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/md5-pass.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/getOpenId.js"></script>
+    <script src="./js/template-web.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;">
+        <!--头部-->
+        <header class="logo_top">
+            <img src="./imgs/login_logo.png" alt="">
+        </header>
+        <!--主体-->
+        <main class="form_table">
+            <form>
+                <ul>
+                    <li><img src="./imgs/login_name.png" alt=""><input type="text" placeholder="请输入您的真实姓名" id="userName"></li>
+                    <li>
+                        <img src="./imgs/login_area.png" alt="">
+                        <input type="text" placeholder="请选择所属地区" id="userArea">
+                        <p>
+                            <span class="choose_province"></span>
+                            <span class="choose_city"></span>
+                        </p>
+                    </li>
+                    <li><img src="./imgs/login_phone.png" alt=""><input type="tel" placeholder="请输入您的手机号" id="userPhone"></li>
+                </ul>
+                <p class="code_box">
+                    <input type="tel" placeholder="请输入验证码" id="userCode"><button href="javascript:;" id="getCode">验证码</button>
+                </p>
+                <p class="agree_box">
+                    <input type="checkbox" id="userAgree"><a href="http://www.tdaifu.cn:8090/taodoctor/statichtml/portal.html">同意《涛部落协议》</a>
+                </p>
+            </form>
+        </main>
+        <!--底部-->
+        <footer class="sure_btn">
+            <button href="javascript:;" id="loginBtn">注册</button>
+        </footer>
+    </div>
+    <!--省份模板-->
+    <script type="text/html" id="provinceList">
+        <ul class="province_box">
+        {{each list value index}}
+            <li procode="{{value.code}}">
+                {{value.name}}
+            </li>
+        {{/each}}
+        </ul>
+    </script>
+    <!--市区模板-->
+    <script type="text/html" id="cityList">
+        <ul class="city_box">
+        {{each list value index}}
+            <li citycode="{{value.code}}">
+                {{value.name}}
+            </li>
+        {{/each}}
+        </ul>
+    </script>
+</body>
+</script>
+</html>

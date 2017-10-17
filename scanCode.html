@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/scanCode.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/scanCode.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#fff;padding-top:1rem;">
+        <!--头部-->
+        <header class="head_img">
+            <img src="./imgs/login_logo.png" alt="">
+            <span class="say_name"></span>
+        </header>
+        <!--主体-->
+        <main class="scan_form">
+            <img src="./imgs/login_logo_scan.png" alt="">
+            <form>
+                <input type="text" id="docName" placeholder="姓名">
+                <input type="tel" id="docTel" placeholder="手机号">
+                <p class="code_box"><input type="tel" id="docCode" placeholder="验证码"><button href="javascript:;" id="getCode">获取验证码</button></p>
+            </form>
+            <a href="javascript:;" id="fastBtn">快速登录</a>
+            <a href="tel:4008167576" class="call_num">联系客服</a>
+        </main>
+        <!--底部-->  
+    </div>
+    <footer class="agree_go">
+            <p>点击“快速登录”即表示同意<a href="http://www.tdaifu.cn:8090/taodoctor/statichtml/portal.html">《涛大夫软件许可及服务协议》</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基本信息</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./less/baseInfo.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/layer.js"></script>
+    <script src="./js/CookieUtil.js"></script>
+    <script src="./js/BaseUrl.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/baseInfo.js"></script>
+</head>
+<body>
+    <div class="container" style="min-width:320px;max-width:640px;margin: 0 auto;background-color:#eaeaea;">
+        <!--头部-->
+        <header class="user_info">
+            <img src="" alt="" id="headImg">
+        </header>
+        <!--主体-->
+        <main class="btn_box">
+            <p class="had_card_id"><input type="text" name="" value="姓名" readonly><span class="name"></span></p>
+            <p class="had_card_id" id="userTel"><input type="text" name="" value="手机号" readonly><span class="phone"></span><i class="iconfont icon-right"></i></p>
+            <p class="had_card_id" id="userZbt"><input type="text" name="" value="绑定身份" readonly><span class="di_ban" style="width:60%;text-align:right;"></span><i class="iconfont icon-right"></i></p>
+            <p class="had_card_id" id="userCard"><input type="text" name="" value="身份证" readonly><span class="card"></span><i class="iconfont icon-right"></i></p>
+            <p class="had_card_id" id="userBank"><input type="text" name="" value="银行卡" readonly><span class="bank_num"></span><i class="iconfont icon-right"></i></p>            
+        </main>
+        <p class="msg_info"><img src="./imgs/information_prompt.png" alt="">请及时绑定身份证信息和银行卡信息，否则无法进行提现。</p>
+    </div>
+</body>
+</html>
